@@ -1,0 +1,10 @@
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+<FilesMatch ".pdf$">
+#Header set X-Robots-Tag "noindex, noarchive, nosnippet"
+Deny from all
+</FilesMatch>
+
